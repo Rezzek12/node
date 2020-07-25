@@ -89,19 +89,11 @@ will reflect those changes.
 Node.js compilation/execution support depends on operating system, architecture,
 and libc version. The table below lists the support tier for each supported
 combination. A list of [supported compile toolchains](#supported-toolchains) is
-also supplied for tier 1 platforms.
 
-**For production applications, run Node.js on supported platforms only.**
 
-Node.js does not support a platform version if a vendor has expired support
-for it. In other words, Node.js does not support running on End-of-Life (EoL)
-platforms. This is true regardless of entries in the table below.
 
-| Operating System | Architectures    | Versions                        | Support Type | Notes                             |
-| ---------------- | ---------------- | ------------------------------- | ------------ | --------------------------------- |
-| GNU/Linux        | x64              | kernel >= 3.10, glibc >= 2.17   | Tier 1       | e.g. Ubuntu 16.04 <sup>[1](#fn1)</sup>, Debian 9, EL 7 <sup>[2](#fn2)</sup> |
-| GNU/Linux        | x64              | kernel >= 3.10, musl >= 1.1.19  | Experimental | e.g. Alpine 3.8                   |
-| GNU/Linux        | x86              | kernel >= 3.10, glibc >= 2.17   | Experimental | Downgraded as of Node.js 10       |
+
+| Downgraded as of Node.js 10       |
 | GNU/Linux        | arm64            | kernel >= 4.5, glibc >= 2.17    | Tier 1       | e.g. Ubuntu 16.04, Debian 9, EL 7 <sup>[3](#fn3)</sup> |
 | GNU/Linux        | armv7            | kernel >= 4.14, glibc >= 2.24   | Tier 1       | e.g. Ubuntu 18.04, Debian 9       |
 | GNU/Linux        | armv6            | kernel >= 4.14, glibc >= 2.24   | Experimental | Downgraded as of Node.js 12       |
